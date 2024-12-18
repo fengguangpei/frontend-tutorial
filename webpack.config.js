@@ -8,19 +8,19 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
   },
-    devtool: "source-map",
+  devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
     sentryWebpackPlugin({
-      org: "viv-ip",
-      project: "frontend-tutorial",
+      org: "fengguangpei",
+      project: "javascript-react",
 
       // Auth tokens can be obtained by creating an internal integration
       // at https://<organization_id>.sentry.io/settings/developer-settings/
       // and need "Release: Admin" and "Organization: Read & Write" permissions
-      authToken: process.env.SENTRY_AUTH_TOKEN,
+      authToken: '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',
 
       // Enable automatically creating releases and associating commits
       release: {
